@@ -1,0 +1,319 @@
+@import url('../../cdn.jsdelivr.net/npm/bootstrap%405.3.3/dist/css/bootstrap.min.css');
+@import url('../../cdn.jsdelivr.net/npm/bootstrap-icons%401.11.3/font/bootstrap-icons.min.css');
+@import url('../../use.typekit.net/ygv6xop.css');
+@import url('../../cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('../../cdn.plyr.io/3.7.8/plyr.css');
+:root {
+	--bs-blue-light:#ddf18f;
+	--bs-blue:#95ac4e;
+	--bs-orange-light:#fee5d2;
+	--bs-orange:#fe974a;
+}
+
+@font-face {
+    font-family: 'scooby';
+    src: url('../fonts/scooby/scoobydoo-3zox-webfont.woff2') format('woff2'),
+         url('../fonts/scooby/scoobydoo-3zox-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spooky';
+    src: url('../fonts/spooky/spooky-yxay-webfont.woff2') format('woff2'),
+         url('../fonts/spooky/spooky-yxay-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	background:transparent; 
+	zoom:100%;
+}
+
+body{
+	line-height:18px;
+	overflow-x: hidden;
+	background-color:var(--bs-pink);
+	height:100%;
+	width:100%;
+
+	font-size: 100%; 
+	letter-spacing: 0.1rem;
+	-webkit-font-smoothing:antialiased;
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	
+	transition:opacity 0.3s, transform 0.3s;
+   	transition:background-color .1s;
+	-moz-transition:background-color .1s linear;
+	-webkit-transition:background-color .1s linear;
+}
+
+/*
+ * Fix browser defanavt design
+ */
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp, tt, var, center,
+dl, dt, dd, ol, nav, ul, li,
+fieldset, form, label, legend, input, button, textarea, select,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	list-style:none;
+}
+
+*:focus {
+  outline:0 !important;
+}
+
+*:focus {
+  outline:0 !important;
+}
+
+a,
+button{
+  	color:inherit;
+  	text-decoration:none;
+  	cursor:pointer;
+  	outline:0;
+	transition:0.3s;
+	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
+	-ms-transition:0.3s;
+	background: transparent;
+}
+
+button:active,
+a.btn:active{
+	border:1px solid var(--bs-blue-5) !important;
+	color: var(--bs-blue-5) !important;
+	background: transparent !important;
+}
+
+a,
+a:focus {
+	color: var(--bs-blue-5);
+	text-decoration:none; 
+}
+
+a:hover{
+	color: var(--bs-blue-3);
+}
+
+header > div{
+	height: 12.5rem;
+}
+
+.py-10rem{
+	padding:10rem 0;
+}
+
+.logo{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.bg-grad{
+	background: rgb(255,240,181);
+background: -moz-radial-gradient(circle, rgba(255,240,181,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(255,240,181,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgb(84 114 52) 0%, rgb(31 36 25) 100%);
+}
+
+.box{
+	border: 4px solid rgba(227,227,227,1.00);
+    -webkit-box-shadow: 0 4px 0 rgba(227,227,227,1.00);
+    box-shadow: 0 4px 0 rgba(227,227,227,1.00);
+}
+
+.py-6{
+	padding: 3rem 0;
+}
+
+.hero-title{
+	color: #6998c4;
+	font-size: calc(6.625rem + 4.5vw);
+	letter-spacing: 0.2rem;
+	-webkit-text-stroke: 2px black; /* Stroke width and color */
+	text-shadow: -3px 4px 0px rgba(0,0,0,0.22);
+	-moz-text-shadow: -3px 4px 0px rgba(0,0,0,0.22);
+	-webkit-text-shadow: -3px 4px 0px rgba(0,0,0,0.22);
+}
+
+.text-spooky{
+	font-family: 'spooky';
+	font-weight: 700;
+	font-style: normal;
+}
+
+.text-scooby{
+	font-family: 'scooby';
+	font-weight: 700;
+	font-style: normal;
+}
+
+.text-blue-light{
+	color: var(--bs-blue-light);
+}
+
+.text-blue{
+	color: var(--bs-blue);
+}
+
+.bg-blue-light{
+	background-color: #35424c;
+}
+
+.bg-orange-light{
+	background-color: #88879b;
+}
+
+.cartoon-btn{
+    font-family: "hwt-artz", sans-serif;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #19334a;
+    background :#8efe4a;
+    border: 3px solid #19334a;
+    -webkit-box-shadow: 0 4px 0 #19334a;
+    box-shadow: 0 4px 0 #19334a;
+    padding: 14px 36px;
+    border-radius: 60px;
+    text-transform: uppercase;
+    gap: 16px;
+    text-align: center;
+    outline: 0;
+    -webkit-transition: background .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.frosted-glass-effect {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(50px);
+	-webkit-backdrop-filter: blur(50px);
+}
+
+.hero{
+	height: 67rem;
+}
+
+.scoob {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -57rem;
+    margin-bottom: -20rem;
+}
+
+.shaggy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -58rem;
+    margin-bottom: -20rem;
+}
+
+.velma {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -57rem;
+    margin-bottom: -20rem;
+}
+
+.about{
+	letter-spacing: 0.075rem;
+}
+
+#contract{
+	transform: translate(-50%, -50%);
+	left: 50%;
+}
+
+#rain-container {
+    position: absolute;
+	top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rain-drop {
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background: url('../images/site/dick.png') no-repeat;
+    background-size: contain;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(250vh);
+    }
+}
+
+@media screen and (max-width: 1050px){
+   	.logo {
+		left: inherit;
+		top: inherit;
+		transform:none;
+		position: inherit;
+	}
+	
+	.hero-title {
+		font-size: calc(1.625rem + 4.5vw);
+	}
+	
+	.hero {
+		height: 54rem;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+	.hero-title{
+		text-shadow:none;
+	}
+	
+	.py-10rem{
+		padding:5rem 0;
+	}
+	
+	.hero {
+		height: 48rem;
+	}
+	
+}
+
+@media screen and (max-width: 568px){
+	
+	.hero-title {
+		font-size: calc(1.125rem + 4.5vw);
+	}
+	
+	.hero {
+		height: 38rem;
+	}
+}
